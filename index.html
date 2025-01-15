@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptoBridge - The Crypto Exchange </title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="app/dist/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- End Style CSS -->
+
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="assets/images/logo/favicon.png"
+    />
+  </head>
+  <body class="body header-fixed">
+    <!-- Header -->
+    <header id="header_main" class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="header__body d-flex justify-content-between">
+              <div class="header__left">
+                <div class="logo">
+                  <a class="light" href="index.html">
+                    <img
+                      src="assets/images/logo/logo.png"
+                      alt=""
+                      width="150"
+                      height="100"
+                      data-retina="assets/images/logo/logo@2x.png"
+                      data-width="118"
+                      data-height="32"
+                    />
+                  </a>
+                  <a class="dark" href="index.html">
+                    <img
+                      src="assets/images/logo/logo-dark.png"
+                      alt=""
+                      width="150"
+                      height="120"
+                      data-retina="assets/images/logo/logo-dark@2x.png"
+                      data-width="118"
+                      data-height="32"
+                    />
+                  </a>
+                </div>
+                <div class="left__main">
+                  <nav id="main-nav" class="main-nav">
+                    <ul id="menu-primary-menu" class="menu">
+                      <li class="menu-item-has-children current-menu-item">
+                        <a href="index.html">Homepage </a>
+                        
+                       
+                      </li>
+                      <li class="menu-item-has-children">
+                        <a href="about.html">About</a>
+
+                   
+                      </li>
+                      <li class="menu-item">
+                        <a href="markets.html">Markets </a>
+                      </li>
+                    
+              
+                      <li class="menu-item">
+                        <a href="contact.html">Contact</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <!-- /#main-nav -->
+                </div>
+              </div>
+
+              <div class="header__right">
+             
+                <div class="dropdown">
+                  <button
+                    class="btn dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton2"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    EN/USD
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton2"
+                  >
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item notify-item language"
+                      data-lang="en"
+                    >
+                      <img
+                        src="assets/images/flags/us.jpg"
+                        alt="user-image"
+                        class="me-1"
+                        height="12"
+                      />
+                      <span class="align-middle">English</span>
+                    </a>
+
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item notify-item language"
+                      data-lang="sp"
+                    >
+                      <img
+                        src="assets/images/flags/spain.jpg"
+                        alt="user-image"
+                        class="me-1"
+                        height="12"
+                      />
+                      <span class="align-middle">Spanish</span>
+                    </a>
+
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item notify-item language"
+                      data-lang="gr"
+                    >
+                      <img
+                        src="assets/images/flags/germany.jpg"
+                        alt="user-image"
+                        class="me-1"
+                        height="12"
+                      />
+                      <span class="align-middle">German</span>
+                    </a>
+
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item notify-item language"
+                      data-lang="it"
+                    >
+                      <img
+                        src="assets/images/flags/italy.jpg"
+                        alt="user-image"
+                        class="me-1"
+                        height="12"
+                      />
+                      <span class="align-middle">Italian</span>
+                    </a>
+
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item notify-item language"
+                      data-lang="ru"
+                    >
+                      <img
+                        src="assets/images/flags/russia.jpg"
+                        alt="user-image"
+                        class="me-1"
+                        height="12"
+                      />
+                      <span class="align-middle">Russian</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="mode-switcher">
+                  <a class="sun" href="#" onclick="switchTheme()">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.99993 11.182C9.7572 11.182 11.1818 9.75745 11.1818 8.00018C11.1818 6.24291 9.7572 4.81836 7.99993 4.81836C6.24266 4.81836 4.81812 6.24291 4.81812 8.00018C4.81812 9.75745 6.24266 11.182 7.99993 11.182Z"
+                        stroke="#23262F"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8 1V2.27273"
+                        stroke="#23262F"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8 13.7271V14.9998"
+                        stroke="#23262F"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M3.04956 3.04932L3.9532 3.95295"
+                        stroke="#23262F"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.0469 12.0469L12.9505 12.9505"
+                        stroke="#23262F"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1 8H2.27273"
+                        stroke="#23262F"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M13.7273 8H15"
+                        stroke="#23262F"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M3.04956 12.9505L3.9532 12.0469"
+                        stroke="#23262F"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.0469 3.95295L12.9505 3.04932"
+                        stroke="#23262F"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" class="moon" onclick="switchTheme()">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.0089 8.97241C12.7855 9.64616 12.4491 10.2807 12.0107 10.8477C11.277 11.7966 10.2883 12.5169 9.1602 12.9244C8.03209 13.3319 6.81126 13.4097 5.64056 13.1486C4.46987 12.8876 3.39772 12.2986 2.54959 11.4504C1.70145 10.6023 1.1124 9.53013 0.851363 8.35944C0.590325 7.18874 0.668097 5.96791 1.07558 4.8398C1.48306 3.71169 2.2034 2.72296 3.1523 1.9893C3.71928 1.55094 4.35384 1.21447 5.02759 0.991088C4.69163 1.84583 4.54862 2.77147 4.61793 3.7009C4.72758 5.17128 5.36134 6.55346 6.40394 7.59606C7.44654 8.63866 8.82873 9.27242 10.2991 9.38207C11.2285 9.45138 12.1542 9.30837 13.0089 8.97241Z"
+                        stroke="white"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              
+                <div class="mobile-button"><span></span></div>
+             
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end Header -->
+
+    <!-- Banner Top -->
+    <section class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-md-12">
+            <div class="banner__content">
+              <h2 class="title">Trade Smarter, Faster, and Safer with Ozenfx.</h2>
+              <p class="fs-20 desc" style="padding-right:0px">
+                Your ultimate gateway to global markets with competitive spreads, cutting-edge platforms, and unparalleled support.
+              </p>
+              <a href="#" class="btn-action"><span>Open a Live Account</span></a>
+            
+            </div>
+          </div>
+          <div class="col-xl-6 col-md-12">
+            <div class="banner__image">
+              <div id="chartdiv"></div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Banner Top -->
+
+     <section class="crypto" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="crypto__main">
+              <div class="flat-tabs">
+                <ul class="menu-tab">
+                  <li class="active"><h6 class="fs-16">Global Markets</h6></li>
+                  <li><h6 class="fs-16">Commodities</h6></li>
+                </ul>
+                <div class="content-tab">
+                  <div class="content-inner">
+                    <div class="crypto-box active" style="background-color: #f7f7f8;     margin-right: 10px;">
+                      <div class="tradingview-widget-container">
+                       
+                      
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                        {
+                        "symbol": "OANDA:XAUUSD",
+                        "width": "100%",
+                        "isTransparent": true,
+                        "colorTheme": "light",
+                        "locale": "en"
+                      }
+                        </script>
+                      </div>
+                    </div>
+                    <div class="crypto-box " style="background-color: #f7f7f8;     margin-right: 10px;">
+                      <div class="tradingview-widget-container">
+                       
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                        {
+                        "symbol": "OANDA:USDJPY",
+                        "width": "100%",
+                        "isTransparent": true,
+                        "colorTheme": "light",
+                        "locale": "en"
+                      }
+                        </script>
+                      </div>
+                    </div>
+                    <div class="crypto-box" style="background-color: #f7f7f8;     margin-right: 10px;">
+                      <div class="tradingview-widget-container">
+                       
+                      
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                        {
+                        "symbol": "OANDA:GBPUSD",
+                        "width": "100%",
+                        "isTransparent": true,
+                        "colorTheme": "light",
+                        "locale": "en"
+                      }
+                        </script>
+                      </div>
+                    </div>
+                    <div class="crypto-box" style="background-color: #f7f7f8;     margin-right: 10px;">
+                      <div class="tradingview-widget-container">
+                       
+                      
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                        {
+                        "symbol": "OANDA:EURUSD",
+                        "width": "100%",
+                        "isTransparent": true,
+                        "colorTheme": "light",
+                        "locale": "en"
+                      }
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-inner">
+                    <div class="crypto-box  active" style="background-color: #f7f7f8;     margin-right: 10px;" >
+                      <div class="tradingview-widget-container">
+                       
+                      
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                        {
+                        "symbol": "OANDA:XAUUSD",
+                        "width": "100%",
+                        "isTransparent": true,
+                        "colorTheme": "light",
+                        "locale": "en"
+                      }
+                        </script>
+                      </div>
+                    </div>
+                    <div class="crypto-box " style="background-color: #f7f7f8;     margin-right: 10px;" >
+                      <div class="tradingview-widget-container">
+                       
+                      
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                        {
+                        "symbol": "OANDA:XAGUSD",
+                        "width": "100%",
+                        "isTransparent": true,
+                        "colorTheme": "light",
+                        "locale": "en"
+                      }
+                        </script>
+                      </div>
+                    </div>
+                    <div class="crypto-box" style="background-color: #f7f7f8;     margin-right: 10px;">
+                      <div class="tradingview-widget-container">
+                       
+                      
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                        {
+                        "symbol": "OANDA:WTICOUSD",
+                        "width": "100%",
+                        "isTransparent": true,
+                        "colorTheme": "light",
+                        "locale": "en"
+                      }
+                        </script>
+                      </div>
+                    </div>
+                    <div class="crypto-box" style="background-color: #f7f7f8;     margin-right: 10px;">
+                      <div class="tradingview-widget-container">
+                       
+                      
+                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                        {
+                        "symbol": "OANDA:NATGASUSD",
+                        "width": "100%",
+                        "isTransparent": true,
+                        "colorTheme": "light",
+                        "locale": "en"
+                      }
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <!-- <section class="coin-list">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block-text">
+              <h3 class="heading">Market Update</h3>
+              
+            </div>
+
+            <div class="coin-list__main">
+              <div class="flat-tabs">
+              
+                <div class="content-tab">
+               <div class="content-inner">
+               
+            <div class="tradingview-widget-container">
+
+ 
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+  {
+  "width": "100%",
+  "height": 1000,
+  "currencies": [
+    "EUR",
+    "USD",
+    "JPY",
+    "GBP",
+    "CHF",
+    "AUD",
+    "CAD",
+    "NZD"
+  ],
+  "isTransparent": false,
+  "colorTheme": "light",
+  "locale": "en",
+  "backgroundColor": "#ffffff"
+}
+  </script>
+</div>
+
+                  </div>
+                
+             
+              
+                
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-md-12">
+            <div class="services__main">
+              <div class="services-box">
+                <div class="icon">
+                  <svg
+                    width="37"
+                    height="38"
+                    viewBox="0 0 37 38"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M35.9606 13.88C34.7889 6.66876 28.6638 1.30399 21.361 1.0928C21.0138 1.07919 20.6754 1.2042 20.4205 1.44029C20.1655 1.67637 20.0149 2.00415 20.0018 2.35138V2.35138V2.46885L20.824 14.7694C20.878 15.5974 21.5898 16.2269 22.4182 16.179L34.7523 15.3567C35.0999 15.331 35.4228 15.1678 35.6496 14.9032C35.8764 14.6386 35.9883 14.2945 35.9606 13.9471V13.88Z"
+                      stroke="#D33535"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12.8195 8.40957C13.6041 8.22809 14.407 8.62953 14.7325 9.36609C14.8178 9.53933 14.8691 9.72732 14.8835 9.91987C15.0514 12.3028 15.4038 17.5217 15.6051 20.3409C15.6395 20.8488 15.8749 21.322 16.2591 21.6558C16.6433 21.9896 17.1448 22.1566 17.6524 22.1197V22.1197L28.0064 21.482C28.4686 21.4542 28.9218 21.6187 29.2586 21.9365C29.5954 22.2542 29.786 22.6971 29.7851 23.1601V23.1601C29.3656 29.4125 24.8735 34.6394 18.7553 35.9942C12.6371 37.3491 6.3582 34.5074 3.33816 29.0167C2.43662 27.4365 1.86569 25.6894 1.66005 23.8817C1.57214 23.3269 1.53842 22.7649 1.55937 22.2036C1.57718 15.5266 6.26646 9.7735 12.8027 8.40957"
+                      stroke="#D33535"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <a href="" class="h6 title">Positive Transformation</a>
+                <p>
+                  Individuals transcend national, cultural, and creed boundaries, leading lives enriched with peace, happiness, and well-being.
+                </p>
+              </div>
+              <div class="services-box">
+                <div class="icon">
+                  <svg
+                    width="31"
+                    height="36"
+                    viewBox="0 0 31 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.6095 13.3208V9.3846C23.6095 4.77743 19.8732 1.0411 15.266 1.0411C10.6589 1.02093 6.90786 4.73893 6.8877 9.34793V9.3846V13.3208"
+                      stroke="#58BD7D"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M22.2525 34.9576H8.24399C4.40499 34.9576 1.29199 31.8464 1.29199 28.0056V20.1424C1.29199 16.3016 4.40499 13.1904 8.24399 13.1904H22.2525C26.0915 13.1904 29.2045 16.3016 29.2045 20.1424V28.0056C29.2045 31.8464 26.0915 34.9576 22.2525 34.9576Z"
+                      stroke="#58BD7D"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M15.2486 22.0381V26.1099"
+                      stroke="#58BD7D"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <a href="" class="h6 title">Empowerment</a>
+                <p>
+                  Diverse populations are empowered to achieve collective growth, breaking barriers and realizing their full potential. 
+                </p>
+              </div>
+              <div class="services-box">
+                <div class="icon">
+                  <svg
+                    width="45"
+                    height="44"
+                    viewBox="0 0 45 44"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M26.5332 3.66699H22.1332C21.5253 3.66699 21.0332 4.15907 21.0332 4.76699C21.0332 5.37491 21.5253 5.86699 22.1332 5.86699H26.5332C27.1411 5.86699 27.6332 5.37491 27.6332 4.76699C27.6332 4.15907 27.1411 3.66699 26.5332 3.66699Z"
+                      fill="#3772FF"
+                    />
+                    <path
+                      d="M31.3001 0H13.7001C11.2743 0 9.30011 1.97416 9.30011 4.4V39.6C9.30011 42.0258 11.2743 44 13.7001 44H31.3001C33.726 44 35.7001 42.0258 35.7001 39.6V4.4C35.7001 1.97416 33.726 0 31.3001 0ZM33.5001 39.6C33.5001 40.8152 32.5153 41.8 31.3001 41.8H13.7001C12.485 41.8 11.5001 40.8152 11.5001 39.6V4.4C11.5001 3.18484 12.485 2.2 13.7001 2.2H31.3001C32.5153 2.2 33.5001 3.18484 33.5001 4.4V39.6Z"
+                      fill="#3772FF"
+                    />
+                    <path
+                      d="M22.5002 40.3336C23.7152 40.3336 24.7002 39.3486 24.7002 38.1336C24.7002 36.9186 23.7152 35.9336 22.5002 35.9336C21.2851 35.9336 20.3002 36.9186 20.3002 38.1336C20.3002 39.3486 21.2851 40.3336 22.5002 40.3336Z"
+                      fill="#3772FF"
+                    />
+                    <path
+                      d="M18.4666 5.86699C19.0741 5.86699 19.5666 5.3745 19.5666 4.76699C19.5666 4.15948 19.0741 3.66699 18.4666 3.66699C17.8591 3.66699 17.3666 4.15948 17.3666 4.76699C17.3666 5.3745 17.8591 5.86699 18.4666 5.86699Z"
+                      fill="#3772FF"
+                    />
+                  </svg>
+                </div>
+                <a href="" class="h6 title">Sustainability</a>
+                <p>
+                  Building a future that thrives on sustainable practices, fostering harmony between economic progress, social equity, and environmental stewardship.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-md-12 ">
+            <div class="block-text" data-aos="fade-up" data-aos-duration="1000">
+              <h3 class="heading">Our Vision</h3>
+              <p class="desc" style="padding-right: 0%;">
+                We envision a world where individuals and communities come together, transcending boundaries and differences, to create a future filled with unity, prosperity, and shared well-being.
+              </p>
+              <a href="#" class="btn-action">Let’s Trade Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" style="  
+    border-radius: 8px;
+    padding: 20px; margin: 20px;">
+      <div class=" setps-container" >
+        <div class="row" style="padding-top: 10px;">
+          <div class="col-md-12">
+            <div class="block-text center">
+              <h3 class="heading">How It Works</h3>
+              <p class="fs-20 desc">
+                Start trading on Ozenfx in just a few easy steps. Our platform integrates seamlessly with MetaTrader 5, giving you access to global financial markets in no time.
+              </p>
+            </div>
+
+            <div class="work__main">
+              <div class="work-box" >
+                <div class="image" >
+                  <img width="100px" src="assets/images/logo/rigister.png" alt="" />
+                </div>
+                <div class="content">
+                  <p class="step">Step 1</p>
+                  <a href="#" class="title">Sign Up</a>
+                  <p class="text">
+                    Create your Trading account in minutes. Just fill out the registration form and verify your email to get started."
+                  </p>
+                </div>
+                <img
+                  class="line"
+                  src="assets/images/icon/connect-line.png"
+                  alt=""
+                />
+              </div>
+              <div class="work-box">
+                <div class="image">
+                  <img width="100px" src="assets/images/logo/addfunds.png" alt="" />
+                </div>
+                <div class="content">
+                  <p class="step">Step 2</p>
+                  <a href="#" class="title">Fund Your Account</a>
+                  <p class="text">
+                    Deposit funds securely using your preferred payment method. Enjoy competitive rates and fast processing to start trading immediately.
+                  </p>
+                </div>
+                <img
+                  class="line"
+                  src="assets/images/icon/connect-line.png"
+                  alt=""
+                />
+              </div>
+              <div class="work-box">
+                <div class="image">
+                  <img width="100px" src="assets/images/logo/connect.png" alt="" />
+                </div>
+                <div class="content">
+                  <p class="step">Step 3</p>
+                  <a href="#" class="title">Connect to MetaTrader 5</a>
+                  <p class="text">
+                    Log in to MetaTrader 5 using your Ozenfx credentials. Access your account and begin exploring advanced trading tools and features.
+                  </p>
+                </div>
+                <img
+                  class="line"
+                  src="assets/images/icon/connect-line.png"
+                  alt=""
+                />
+              </div>
+              <div class="work-box">
+                <div class="image">
+                  <img width="100px" src="assets/images/logo/trading.png" alt="" />
+                </div>
+                <div class="content">
+                  <p class="step">Step 4</p>
+                  <a href="#" class="title">Start Trading</a>
+                  <p class="text">
+                    Trade Forex, commodities, indices, and cryptocurrencies with competitive spreads and low fees. Execute trades instantly on our robust servers.
+                  </p>
+                </div>
+                <img
+                class="line"
+                src="assets/images/icon/connect-line.png"
+                alt=""
+              />
+              </div>
+              
+              <div class="work-box">
+                <div class="image">
+                  <img width="100px" src="assets/images/logo/withdraw.png" alt="" />
+                </div>
+                <div class="content">
+                  <p class="step">Step 5</p>
+                  <a href="#" class="title">Withdraw Your Earnings</a>
+                  <p class="text">
+                    Profit from your trades? Withdraw your earnings easily and securely with no hidden charges.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <section class="about-2" >
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-md-12">
+            <div class="about_image">
+              <img
+                class="img-main"
+                src="assets/images/layout/Illustration.png"
+                alt=""
+              />
+              <div class="traders-box">
+                <div class="icon">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.82861 17.172L10.8172 10.8177L17.1715 8.8291L15.1829 15.1834L8.82861 17.172Z"
+                      stroke="#3772FF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <circle
+                      cx="13"
+                      cy="13"
+                      r="12"
+                      stroke="#3772FF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="content">
+                  <h6 class="numb">198+</h6>
+                  <p>Countries</p>
+                </div>
+              </div>
+              <div class="traders-box">
+                <div class="icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.6666 10.6669C22.3406 8.32055 21.2521 6.14647 19.5688 4.47959C17.8856 2.8127 15.701 1.74548 13.3515 1.44233C11.0021 1.13918 8.61814 1.6169 6.56691 2.80192M1.33331 2.66693V8.00026H6.66665"
+                      stroke="#D33535"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M1.33331 13.334C1.65939 15.6804 2.74789 17.8544 4.43113 19.5213C6.11437 21.1882 8.29897 22.2554 10.6484 22.5586C12.9979 22.8617 15.3818 22.384 17.433 21.199M22.6666 21.334V16.0007H17.3333"
+                      stroke="#D33535"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="content">
+                  <h6 class="numb">350+</h6>
+                  <p>Trading Pairs</p>
+                </div>
+              </div>
+              <div class="traders-box">
+                <div class="icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.52364 15.7402C5.03897 15.7402 1.2088 16.4181 1.2088 19.1341C1.2088 21.8489 5.01447 22.5524 9.52364 22.5524C14.0083 22.5524 17.8385 21.8734 17.8385 19.1586C17.8385 16.4437 14.0328 15.7402 9.52364 15.7402Z"
+                      stroke="#3772FF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.52361 11.8667C12.4823 11.8667 14.8529 9.49484 14.8529 6.53734C14.8529 3.57867 12.4823 1.20801 9.52361 1.20801C6.56611 1.20801 4.19427 3.57867 4.19427 6.53734C4.19427 9.49484 6.56611 11.8667 9.52361 11.8667Z"
+                      stroke="#3772FF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M20.4048 8.11328V12.7916"
+                      stroke="#3772FF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M22.7917 10.4525H18.02"
+                      stroke="#3772FF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="content">
+                  <h6 class="numb">20 million+</h6>
+                  <p>Trades</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-md-12">
+            <div
+              class="about__content"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <h3 class="heading">
+                What Is Ozenfx ?
+              </h3>
+              <p class="fs-20 desc">
+                Experience seamless trading on Ozenfx, your trusted gateway to Forex and global financial markets. With cutting-edge technology and a robust platform, we provide a secure and user-friendly experience tailored to meet every trader's needs.
+              </p>
+              <ul class="list">
+                <li>
+                  <div class="icon">
+                    <svg
+                      width="29"
+                      height="23"
+                      viewBox="0 0 29 23"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M19.1987 11.4737C19.1987 14.0115 17.1406 16.0681 14.6029 16.0681C12.0651 16.0681 10.0085 14.0115 10.0085 11.4737C10.0085 8.93457 12.0651 6.87793 14.6029 6.87793C17.1406 6.87793 19.1987 8.93457 19.1987 11.4737Z"
+                        stroke="#D33535"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M14.6007 22.0866C20.1354 22.0866 25.1978 18.107 28.048 11.4735C25.1978 4.83991 20.1354 0.860352 14.6007 0.860352H14.6065C9.07172 0.860352 4.00934 4.83991 1.15912 11.4735C4.00934 18.107 9.07172 22.0866 14.6065 22.0866H14.6007Z"
+                        stroke="#D33535"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="content">
+                    <h6 class="title">View Real-Time Market Data</h6>
+                    <p>
+                      Access live Forex rates, commodity prices, and cryptocurrency charts. Stay updated with real-time data to make informed trading decisions and capitalize on market opportunities.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon green">
+                    <svg
+                      width="25"
+                      height="30"
+                      viewBox="0 0 25 30"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M22.5815 4.4024C23.2167 4.62478 23.6411 5.2236 23.6411 5.89655V15.7408C23.6411 18.4922 22.6411 21.1186 20.8752 23.1534C19.9871 24.1781 18.8636 24.976 17.6703 25.6214L12.4989 28.4149L7.3188 25.6199C6.12406 24.9746 4.99909 24.1781 4.10958 23.1519C2.34218 21.1171 1.33929 18.4893 1.33929 15.735V5.89655C1.33929 5.2236 1.7637 4.62478 2.39886 4.4024L11.9655 1.04056C12.3056 0.921376 12.6762 0.921376 13.0149 1.04056L22.5815 4.4024Z"
+                        stroke="#58BD7D"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8.71194 14.2775L11.4619 17.0288L17.1274 11.3633"
+                        stroke="#58BD7D"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="content">
+                    <h6 class="title">Trade Forex and Commodities</h6>
+                    <p>
+                      Buy and sell top trading instruments such as EUR/USD, Gold and more. With competitive spreads and advanced trading tools, Ozenfx offers everything you need to succeed in global markets.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon blue">
+                    <svg
+                      width="33"
+                      height="25"
+                      viewBox="0 0 33 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24.7354 10.8438C27.0644 10.8438 28.9536 8.9559 28.9536 6.62699C28.9536 4.29807 27.0644 2.41016 24.7354 2.41016"
+                        stroke="#3772FF"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M26.6747 15.4258C27.3701 15.4737 28.0616 15.5723 28.7424 15.7256C29.6884 15.9108 30.8262 16.2985 31.2312 17.1472C31.4897 17.6907 31.4897 18.3236 31.2312 18.8685C30.8275 19.7172 29.6884 20.1036 28.7424 20.2981"
+                        stroke="#3772FF"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8.30432 10.8438C5.9754 10.8438 4.08615 8.9559 4.08615 6.62699C4.08615 4.29807 5.9754 2.41016 8.30432 2.41016"
+                        stroke="#3772FF"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.36512 15.4258C5.66964 15.4737 4.97816 15.5723 4.29734 15.7256C3.35138 15.9108 2.21357 16.2985 1.80987 17.1472C1.55007 17.6907 1.55007 18.3236 1.80987 18.8685C2.21224 19.7172 3.35138 20.1036 4.29734 20.2981"
+                        stroke="#3772FF"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16.5131 16.334C21.2322 16.334 25.2638 17.0481 25.2638 19.906C25.2638 22.7625 21.2589 23.5033 16.5131 23.5033C11.7926 23.5033 7.76233 22.7891 7.76233 19.9313C7.76233 17.0734 11.7673 16.334 16.5131 16.334Z"
+                        stroke="#3772FF"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16.5131 12.2579C13.4008 12.2579 10.9053 9.76246 10.9053 6.6488C10.9053 3.53647 13.4008 1.04102 16.5131 1.04102C19.6254 1.04102 22.1209 3.53647 22.1209 6.6488C22.1209 9.76246 19.6254 12.2579 16.5131 12.2579Z"
+                        stroke="#3772FF"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="content">
+                    <h6 class="title">Community</h6>
+                    <p>
+                      Stay informed with regular market updates, expert tips, and success stories. Follow us on social media to connect with fellow traders and industry professionals.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+ 
+    <section class="reg-download" >
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-md-12">
+            <div
+              class="download__content"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+            <h3 class="heading">Welcome to Ozenfx – Your Gateway to Financial Freedom!
+            </h3>
+            <p class="fs-20 decs">
+              Step into the world of limitless trading opportunities and start your journey toward financial growth with Ozenfx. Let’s build your future together, one trade at a time.
+            </p>
+              <div class="register">
+                <div class="row">
+                  <div class="col-md-12">
+                 
+                  </div>
+                  <div class="col-md-12">
+                    <div class="flat-tabs">
+                      <ul class="menu-tab">
+                        <li class="active"><h6 class="fs-16">Email</h6></li>
+                        <li><h6 class="fs-16">Mobile</h6></li>
+                      </ul>
+        
+                      <div class="content-tab">
+                        <div class="content-inner">
+                          <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Email/ID</label>
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="exampleInputEmail1"
+                                placeholder="Please fill in the email form."
+                              />
+                            </div>
+                           
+                          
+                            <div class="form-group">
+                              <label>Country </label>
+                              <select class="form-control">
+                                <option>South Korea (+82)</option>
+                                <option>Vietnamese (+84)</option>
+                                <option>South Korea (+82)</option>
+                                <option>South Korea (+82)</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label
+                                >Phone
+                                <span class="fs-14">(Enter numbers only)</span></label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="ex) 01012345678 (without '-')"
+                              />
+                            </div>
+        
+        
+                            <button type="submit" class="btn-action">
+                              Pre-Registration
+                            </button>
+                           
+                          </form>
+                        </div>
+                        <div class="content-inner">
+                          <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Mobile Phone</label>
+                              <div>
+                                <select class="form-control">
+                                  <option>+1</option>
+                                  <option>+84</option>
+                                  <option>+82</option>
+                                  <option>+32</option>
+                                </select>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Your Phone number"
+                                />
+                              </div>
+                            </div>
+                         
+                           
+                            <div class="form-group">
+                              <label>Country </label>
+                              <select
+                                class="form-control"
+                                id="exampleFormControlSelect1"
+                              >
+                                <option>South Korea (+82)</option>
+                                <option>Vietnamese (+84)</option>
+                                <option>South Korea (+82)</option>
+                                <option>South Korea (+82)</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label
+                                >Phone
+                                <span class="fs-14">(Enter numbers only)</span></label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="ex) 01012345678 (without '-')"
+                              />
+                            </div>
+        
+                         
+        
+                            <button type="submit" class="btn-action">
+                              Pre-Registration
+                            </button>
+                          
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+          <div class="col-xl-6 col-md-12">
+            <img class = "mobile-reg" style="width: 600px; height: 800px;"  src="assets/images/layout/43916.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- <section class="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-md-12">
+            <div class="block-text">
+              <h3 class="heading">Our customers love what we do</h3>
+              <h6 class="fs-20">
+                Transform Your idea into Reality With Finsweet
+              </h6>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+
+              <div class="swiper swiper-thumb1">
+                <div class="swiper-wrapper list-img">
+                  <div class="swiper-slide">
+                    <img src="assets/images/avt/avt-02.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/avt/avt-03.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/avt/avt-04.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="couter">
+                <h6>30+</h6>
+                <p class="title">Customer Reviews</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-md-12">
+            <div class="swiper swiper-testimonial-1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonials-box">
+                    <span class="icon-quote"></span>
+                    <h6 class="text">
+                      “Great course I really enjoyed it and the course was way
+                      easy to learn with very good explanations of the code, I
+                      could easily understand and develop applications with the
+                      knowledge gathered during the course.”
+                    </h6>
+                    <div class="bottom">
+                      <div class="info">
+                        <img src="assets/images/avt/avt-02.png" alt="" />
+                        <div class="content">
+                          <h6 class="name">Johnny Andro</h6>
+                          <p class="position">Director, Company</p>
+                        </div>
+                      </div>
+                      <img src="assets/images/partner/logo-05.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonials-box">
+                    <span class="icon-quote"></span>
+                    <h6 class="text">
+                      “Great course I really enjoyed it and the course was way
+                      easy to learn with very good explanations of the code, I
+                      could easily understand and develop applications with the
+                      knowledge gathered during the course.”
+                    </h6>
+                    <div class="bottom">
+                      <div class="info">
+                        <img src="assets/images/avt/avt-03.png" alt="" />
+                        <div class="content">
+                          <h6 class="name">Johnny Andro</h6>
+                          <p class="position">Director, Company</p>
+                        </div>
+                      </div>
+                      <img src="assets/images/partner/logo-05.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonials-box">
+                    <span class="icon-quote"></span>
+                    <h6 class="text">
+                      “Great course I really enjoyed it and the course was way
+                      easy to learn with very good explanations of the code, I
+                      could easily understand and develop applications with the
+                      knowledge gathered during the course.”
+                    </h6>
+                    <div class="bottom">
+                      <div class="info">
+                        <img src="assets/images/avt/avt-04.png" alt="" />
+                        <div class="content">
+                          <h6 class="name">Johnny Andro</h6>
+                          <p class="position">Director, Company</p>
+                        </div>
+                      </div>
+                      <img src="assets/images/partner/logo-05.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    
+
+
+    <footer class="footer style-2">
+      <div class="container">
+        <div class="footer__main">
+          <div class="row">
+            <div class="col-xl-4 col-md-6">
+              <div class="info">
+                <a href="index.html" class="logo">
+                  <img style="width:210px; height: 140px;" src="assets/images/logo/log-footer.png" alt="" />
+                </a>
+                <h6>Let's talk! 🤙</h6>
+                <ul class="list">
+                  <li><p>+91 7012055189</p></li>
+                  <li><p>support@ozenfx.com</p></li>
+                  <li>
+                    
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="widget">
+                <div class="widget-link">
+                  <h6 class="title">Useful Links
+                  </h6>
+                  <ul>
+                    <li><a href="spot.html">About Us
+                    </a></li>
+                    <li><a href="#">Markets</a></li>
+                    <li><a href="#">Platform - MT5
+                      </a></li>
+                    <li><a href="exchange.html">Exchange</a></li>
+                    <li><a href="#">Platform - MT5 Web
+                    </a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="widget-link s2">
+                  <h6 class="title">Legal</h6>
+                  <ul>
+                    <li><a href="withdrawal_refund_policy.html">Withdrawal & Refund Policy</a></li>
+                    <li><a href="risk_warning.html">Risk Warning</a></li>
+                    <li><a href="aml_kyc_policy.html">AML KYC Policy</a></li>
+                    <li><a href="full_client_agreement.html">Client Agreement</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="terms_and_conditions.html">Terms and Conditions</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-12">
+              <div class="footer-contact">
+                <h5>Our Community</h5>
+                <p>
+                  Here you'll find regular market updates, expert tips & stories.
+
+
+                </p>
+                <form action="#">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    required=""
+                  />
+                  <button type="submit" class="btn-action">Submit</button>
+                </form>
+                <ul class="list-social">
+                  <li>
+                    <a href="https://www.facebook.com/people/Ozen-FX/pfbid0gd4FRJetETFwTmCaATWw4H6VpQBwULMUPGcX6wr34RDYWRoonDe32spNGx5YXcWJl/?sk=about"><span class="icon-facebook-f"></span></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/ozenfx/?utm_source=ig_web_button_share_sheet"><span class="icon-instagram"></span></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/x/migrate?tok=7b2265223a222f6f7a656e5f66783f733d3131222c2274223a313733363835313034357d37c735c784f5a5d40c63c94b5d2b9caf"><span class="icon-twitter"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p style="font-size: 10px; width: 100%; padding: 20px 20px 20px 20px;">
+        Risk Statement : An investment in derivatives may mean investors may lose an amount even greater than their original investment. Anyone wishing to invest in any of the products mentioned in www.ozenfx.com should seek their own financial or professional advice. Trading of securities, forex, stock market, commodities, options and futures may not be suitable for everyone and involves the risk of losing part or all of your money. Trading in the financial markets has large potential rewards, but also large potential risk. You must be aware of the risks and be willing to accept them in order to invest in the markets. Don't invest and trade with money which you can't afford to lose. Forex Trading are not allowed in some countries, before investing your money, make sure whether your country is allowing this or not. You are strongly advised to obtain independent financial, legal and tax advice before proceeding with any currency or spot metals trade. Nothing in this site should be read or construed as constituting advice on the part of Ozenfx Markets Ltd or any of its affiliates, directors, officers or employees.
+
+Disclaimer : Ozenfx Markets Ltd does not provide services for citizens/residents of the United States, Cuba, Iraq, Myanmar, North Korea, Sudan. The services of Ozenfx Markets Ltd are not intended for distribution to, or use by, any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation.
+      </p>
+      <div class="container-fluid">
+        <div class="footer__bottom">
+          <p>
+            ©2025 Ozenfx Markets Ltd. s All rights reserved. Terms of Service | Privacy
+            Terms
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="app/js/aos.js"></script>
+    <script src="app/js/jquery.min.js"></script>
+    <script src="app/js/jquery.easing.js"></script>
+    <script src="app/js/popper.min.js"></script>
+    <script src="app/js/bootstrap.min.js"></script>
+    <script src="app/js/jquery.peity.min.js"></script>
+    <script src="app/js/Chart.bundle.min.js"></script>
+
+    <script src="app/js/switchmode.js"></script>
+
+    <script src="app/js/chart.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="app/js/swiper-bundle.min.js"></script>
+
+    <script src="app/js/swiper.js"></script>
+<script>
+  /**
+ * ---------------------------------------
+ * This demo was created using amCharts 4.
+ * 
+ * For more information visit:
+ * https://www.amcharts.com/
+ * 
+ * Documentation is available at:
+ * https://www.amcharts.com/docs/v4/
+ * ---------------------------------------
+ */
+
+// Themes begin
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+var chart = am4core.create("chartdiv", am4maps.MapChart);
+
+// Set map definition
+chart.geodata = am4geodata_worldLow;
+
+// Set projection
+chart.projection = new am4maps.projections.Orthographic();
+chart.panBehavior = "rotateLongLat";
+chart.deltaLatitude = -20;
+chart.padding(20,20,20,20);
+
+// Create map polygon series
+var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+
+// Make map load polygon (like country names) data from GeoJSON
+polygonSeries.useGeodata = true;
+//polygonSeries.include = ["BR", "UA", "MX", "CI"];
+
+// Configure series
+var polygonTemplate = polygonSeries.mapPolygons.template;
+polygonTemplate.tooltipText = "{name}";
+polygonTemplate.fill = am4core.color("#074173");
+polygonTemplate.stroke = am4core.color("#1679AB");
+polygonTemplate.strokeWidth = 0.6;
+polygonTemplate.cursorOverStyle = am4core.MouseCursorStyle.pointer;
+polygonTemplate.urlTarget = "_blank";
+
+var graticuleSeries = chart.series.push(new am4maps.GraticuleSeries());
+graticuleSeries.mapLines.template.line.stroke = am4core.color("#044C8C");
+graticuleSeries.mapLines.template.line.strokeOpacity = 0.01;
+graticuleSeries.fitExtent = false;
+
+
+chart.backgroundSeries.mapPolygons.template.polygon.fillOpacity = 0.1;
+chart.backgroundSeries.mapPolygons.template.polygon.fill = am4core.color("#1679AB");
+
+// Create hover state and set alternative fill color
+var hs = polygonTemplate.states.create("hover");
+hs.properties.fill = chart.colors.getIndex(0).brighten(-0.5);
+
+let animation;
+setTimeout(function(){
+  animation = chart.animate({property:"deltaLongitude", to:500000}, 20000000);
+}, 4000)
+
+chart.seriesContainer.events.on("down", function(){
+//  animation.stop();
+})
+</script>
+    <script src="app/js/app.js"></script>
+  </body>
+</html>
