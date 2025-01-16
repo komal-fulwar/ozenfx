@@ -3007,7 +3007,7 @@ body[data-magic-cursor=hide] .mouse-cursor {
   margin-top: 45px;
   margin-bottom: 49px;
   position: relative;
-  background: var(--surface);
+ 
   border-radius: 16px;
   display: flex;
   align-items: center;
