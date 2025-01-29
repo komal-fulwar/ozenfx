@@ -51,6 +51,23 @@ padding: 10px;
 
 }
 
+.signinbtn {
+  border: 1px solid var(--onsurface);
+                border-radius: 90px;
+                color: #fff;  
+                background: var(--primary);
+                font-size: 13px;
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+}
+
+  /* Media query for small screens */
+  @media screen and (max-width: 768px) {
+    .signinbtn {
+        display: none;
+    }
+}
 
 .icon-facebook-f:before {
   content: "\e933";
