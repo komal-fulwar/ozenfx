@@ -1438,8 +1438,13 @@ chart.geodata = am4geodata_worldLow;
 // Set projection
 chart.projection = new am4maps.projections.Orthographic();
 chart.panBehavior = "rotateLongLat";
+chart.mouseWheelBehavior = "none";
 chart.deltaLatitude = -20;
 chart.padding(20,20,20,20);
+chart.scrollbarX = new am4core.Scrollbar();
+chart.scrollbarX.disabled = true;
+chart.scrollbarY = new am4core.Scrollbar();
+chart.scrollbarY.disabled = true;
 
 // Create map polygon series
 var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
